@@ -1,0 +1,155 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #003366, #4da6ff);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #00264d;
+  padding: 2rem;
+  text-align: center;
+}
+.text-center {
+  margin-top: 129px;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #d9eaff;
+}
+
+.container-section {
+  background-color: #ffffff;
+  color: #003366;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.progress {
+  height: 25px;
+  background-color: #d9eaff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  background-color: #4da6ff;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.custom-btn {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0059b3;
+}
+
+#confirmation {
+  display: none;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.confirmation-icon {
+  font-size: 4rem;
+  color: #4da6ff;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #003366;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+.is-invalid {
+  border-color: #dc3545;
+  background-color: #fff0f0;
+}
+
+.confirmation-container {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background: linear-gradient(to right, #003366, #4da6ff);
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  stroke: #00ff99;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  animation: scaleUp 0.3s ease-out forwards;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: strokeCircle 0.6s forwards;
+}
+
+.checkmark-check {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: strokeCheck 0.4s 0.6s forwards;
+}
+
+@keyframes strokeCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes strokeCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

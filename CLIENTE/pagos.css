@@ -1,0 +1,31 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e4eaf1;
+}
+
+.header {
+  margin-top: 100px;
+  background: linear-gradient(to right, #003366, #4da6ff);
+}
+
+.kpi-card {
+  border: none;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: transform 0.3s;
+}
+.kpi-card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #003366;
+}
+
+.btn-primary {
+  background-color: #4da6ff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #3399ff;
+}
